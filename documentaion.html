@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header><h1>Python Documentation</h1></header>
+        <a href="#What_is_Python?"class="nav-link">What is Python?</a>
+        <a href="#Installation_Guide" class="nav-link">Installation Guide</a>
+        <a href="#Python_Syntax_Basics" class="nav-link">Python Syntax Basics</a>
+       <a href="#Variables_and_Data_Types" class="nav-link">Variables and Data Types</a>
+       <a href="#Operators_in_Python" class="nav-link">Operators in Python</a>
+       <a href="#Control_Flow" class="nav-link">Control Flow</a>
+       <a href="#Functions" class="nav-link">Functions</a>
+       <a href="#Data_Structures" class="nav-link">Data Structures</a>
+       <a href="#Working_with_Modules" class="nav-link">Working with Modules</a>
+       <a href="#Additional_Resources_and_Next_Steps" class="nav-link">Additional Resources and Next Steps</a>
+       <a href="#Reference" class="nav-link">Reference</a>
+    </nav>
+
+
+    <main id="main-doc">
+      <section class="main-section" id="What_is_Python?">
+        <header><h1>What is Python?</h1></header>
+        <p>Python is a high-level, versatile programming language known for its readability and simplicity. It’s widely used in various fields such as web development, data science, artificial intelligence, and automation. Python is beginner-friendly and has an extensive standard library that supports many programming tasks.</p>
+        <h3>Key features</h3>
+        <ul>
+          <li>Easy-to-read syntax</li>
+          <li>Supports multiple programming paradigms (e.g., procedural, object-oriented)</li>
+          <li>Cross-platform compatibility</li>
+          <li>Large community and support resources</li>
+        </ul>
+      </section>
+
+
+      <section class="main-section" id="Installation_Guide">
+        <header><h1>Installation Guide</h1></header>
+        <ol>
+          <li><strong>Download Python:</strong> Visit the official Python website and download the latest version for your operating system.</li>
+          <li><strong>Install Python:</strong> Run the installer and ensure you check the “Add Python to PATH” option.</li>
+          <li><strong>Verify Installation:</strong> Open a terminal or command prompt and type: <pre><code>python --version</code></pre> This command should output the version of Python you installed.</li>
+        </ol>
+      </section>
+
+
+      <section class="main-section" id="Python_Syntax_Basics">
+        <header><h1>Python Syntax Basics</h1></header><p>Python syntax is simple and emphasizes readability. Here are a few key points about Python syntax:</p> 
+        <ul>
+        <li><strong>Comments:</strong> Use the # symbol for single-line comments
+        <pre><code># This is a comment
+print("Hello, World!")  # This line prints a message</code></pre></li>
+          <li><strong>Indentation:</strong> Indentation (usually 4 spaces) defines code blocks, unlike other languages that use braces {}.
+          <pre><code>if 5 > 2:
+    print("Five is greater than two!")  # Indented block
+</code></pre></li>
+          <li><strong>Printing Output:</strong> Use the print() function to output data to the screen.  <pre><code>print("Hello, World!")
+</code></pre></li>
+        </ul>
+      </section>
+
+
+      <section class="main-section" id="Variables_and_Data_Types">
+        <header><h1>Variables and Data Types</h1></header>
+        <p>Variables</p>
+        <p>Variables are used to store data.In Python, variables are created by assigning a value using the = operator. Python supports various data types like string,Integer,float and boolean.</p>
+        <table>
+    <tr>
+        <th>Example</th>
+        <th>Data Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>age = 25</td>
+        <td>Integer</td>
+        <td>Whole numbers</td>
+    </tr>
+    <tr>
+        <td>height = 5.8</td>
+        <td>Float</td>
+        <td>Decimal numbers</td>
+    </tr>
+     <tr>
+        <td>name = "Alice"</td>
+        <td>String</td>
+        <td>Text data</td>
+    </tr>
+     <tr>
+        <td>is_student = True</td>
+        <td>Boolean</td>
+        <td>True or False values</td>
+    </tr>
+     <tr>
+        <td>result = None</td>
+        <td>None</td>
+        <td>Represents no value or empty state</td>
+    </tr>
+</table>
+  </section>
+
+
+      <section class="main-section" id="Operators_in_Python">
+        <header><h1>Operators in Python</h1></header><p>Python supports various operators for performing calculations and comparisons.</p>
+        <ul>
+          <li>Arithmetic Operators: Used for basic mathematical operations.<pre><code>x = 10
+y = 3
+print(x + y)    # Addition: 13
+print(x - y)    # Subtraction: 7
+print(x * y)    # Multiplication: 30
+print(x / y)    # Division: 3.333...
+print(x % y)    # Modulus: 1
+</code></pre></li>
+          <li>Comparison Operators: Used to compare values, returning True or False.<pre><code>print(x == y)   # Equal to: False
+print(x != y)   # Not equal to: True
+print(x > y)    # Greater than: True
+print(x < y)    # Less than: False
+</code></pre></li>
+          <li>Logical Operators: Used to combine conditions.<pre><code>a = True
+b = False
+print(a and b)  # Logical AND: False
+print(a or b)   # Logical OR: True
+</code></pre></li>
+        </ul>
+      </section>
+
+
+      <section class="main-section" id="Control_Flow">
+        <header><h1>Control Flow</h1></header><p>Control flow allows you to execute certain parts of code based on conditions or loops.</p>
+        <p>Conditional Statements</p>
+        <ul>
+          <li> If Statements: Use if, elif, and else to execute code based on conditions.
+          <pre><code>age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+</code></pre>
+         </li>
+        </ul>
+        <p>Loops</p>
+        <ul>
+          <li>For Loop: Used to iterate over a sequence.<pre><code>for i in range(5):
+    print(i)  # Outputs: 0, 1, 2, 3, 4
+
+</code></pre></li>
+          <li>While Loop: Repeats as long as a condition is True.<pre><code>count = 0
+while count < 5:
+    print(count)
+    count += 1  # Increment count by 1
+</code></pre></li></li>
+          </ul>
+      </section>
+
+
+      <section class="main-section" id="Functions">
+        <header><h1>Functions</h1></header><p>Functions help organize code into reusable blocks. Define a function using the def keyword.</p>
+        <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))  # Outputs: Hello, Alice!
+</code></pre>
+<p>Functions can take multiple arguments and return a value.</p>
+        <pre><code>def add(a, b):
+    return a + b
+
+print(add(5, 3))  # Outputs: 8
+</code></pre>
+      </section>
+
+
+      <section class="main-section" id="Data_Structures">
+        <header><h1>Data Structures</h1></header><p>Python has several data structures to organize and manage collections of data.</p>
+        <h3>List</h3>
+        <p>An ordered, mutable collection of items.</p>
+        <pre><code>fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")   # Adds "orange" to the list
+print(fruits)  # Outputs: ['apple', 'banana', 'cherry', 'orange']
+</code></pre>
+<h3>Dictionaries</h3>
+  <p>Stores data as key-value pairs.</p>
+        <pre><code>person = {"name": "Alice", "age": 25}
+print(person["name"])     # Outputs: Alice
+</code></pre>
+<h3>Tuples</h3>
+<p>An ordered, immutable collection.</p>
+        <pre><code>coordinates = (10, 20)
+print(coordinates[0])     # Outputs: 10
+</code></pre>
+<h3>Sets</h3>
+<p>An unordered collection of unique items.</p>
+        <pre><code>unique_numbers = {1, 2, 3, 3}
+print(unique_numbers)     # Outputs: {1, 2, 3}
+</code></pre>
+      </section>
+
+
+      <section class="main-section" id="Working_with_Modules">
+        <header><h1>Working with Modules</h1></header><p>Modules are Python files containing functions and variables. You can import built-in or custom modules.</p>
+        <ul>
+          <li><strong>Importing a Built-in Module:</strong></li>
+          <pre><code>import math
+print(math.sqrt(16))  # Outputs: 4.0
+</code></pre>
+        <li><strong>Creating a Custom Module:</strong>
+        <ol>
+          <li>Create a file <span>my_module.py</span> with the following code. <pre><code>def add(a, b):
+    return a + b
+</code></pre></li>
+<li>Import and use it in another file.<pre><code>from my_module import add
+print(add(3, 4))  # Outputs: 7
+</code></pre></li>
+        </ol>
+        </li>
+        </ul>
+      </section>
+
+
+      <section class="main-section" id="Additional_Resources_and_Next_Steps">
+        <header><h1>Additional Resources and Next Steps</h1></header>
+        <ul>
+          <li>Python documentation: <a href="https://docs.python.org/3/">docs.python.org</a></li>
+          <li>Common Practice platforms: <a href="https://www.hackerrank.com/">HackerRank</a> , <a href="https://leetcode.com/">Leetcode</a></li>
+          <li>Interactive Coding: <a href="https://jupyter.org/">Jupyter Notebooks</a>, <a href="https://replit.com/">Repl.it</a></li>
+        </ul>
+      </section>
+
+
+      <section class="main-section" id="Reference">
+        <header><h1>Reference</h1></header><p>All the documentation in this page is taken from <a href="https://docs.python.org/3" >Python official documentation</a></p>
+      </section>
+
+
+    </main>
+  </body>
+</html>
