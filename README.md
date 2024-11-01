@@ -13,4 +13,4 @@ To view the documentation:
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/Rhuthu/python-documentation.git
+   git clone https://github.com/Rhuthu/documentation_page.git
